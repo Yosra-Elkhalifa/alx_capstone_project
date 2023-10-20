@@ -1,0 +1,130 @@
+body{
+    font-family: 'Dela Gothic One', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Young Serif', serif;
+    padding: 0;
+    margin: 0;
+}
+#nav-links{
+    display: flex;
+    justify-content: flex-end;
+    z-index: 1000;
+    position: relative;
+    background-color: rgb(229, 224, 224);
+    opacity: 0.5;
+    
+}
+
+#nav-links a {
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(81, 81, 81);
+    padding: 10px;
+}
+#nav-links a:hover{
+    color: darkcyan ;
+}
+/*#nav-links a:visited{
+    color: darkcyan;
+}*/
+
+main {
+    height: 600px;
+    background-image: url(/src/main/bg2.jpg);
+    opacity: 0.8;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    top: -48px;
+    display: flex;
+   
+
+}
+#main-content{
+    margin-top: 200px;
+    padding: 10px;
+    padding-left: 30px;
+}
+
+#main-content h2{
+    font-size: 35px;
+    font-weight: 300;
+    
+}
+#main-content p{
+    margin-top: 50px;
+    font-size: 20px;
+}
+
+#social-icons{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    padding-left: 50px;
+    gap: 30px;
+    
+}
+#social-icons img {
+    border-radius: 50%;
+}
+#about-me{
+    margin-top: 10px;
+}
+#about-me div{
+    
+    display: flex;
+  
+}
+#about-content{
+    
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    margin-left: 80px;
+    line-height: 2;
+ 
+}
+#about-content h1{
+    font-size: 50px;
+}
+#about-me img{
+    border-radius: 50%;
+}
+
+#skills{
+    background-image: linear-gradient(to bottom, rgba(255,0,0,0), rgb(175, 244, 239));
+    padding-top: 50px;
+}
+#skills h1{
+    text-align: center;
+    padding: 30px;
+    color: black;
+    font-size: 50px;
+    border: 2px;
+    box-shadow: 10px 10px 8px /*10px*/ #888888;
+
+}
+#hover-cyan:hover{
+    text-shadow: 0 0 50px darkcyan;
+}
+#hover-white:hover{
+    text-shadow: 0 0 50px rgb(0, 5, 6);
+}
+#software-eng{
+    display: flex;
+    text-align: center;
+    gap: 10px;
+}
+#soft-skills{
+    display: flex;
+    text-align: center;
+    gap: 10px;
+    
+}
+#soft-skills img{
+   padding-left: 20px;
+}
+/*.circle-border{
+    border-radius: 50%;
+}*/
