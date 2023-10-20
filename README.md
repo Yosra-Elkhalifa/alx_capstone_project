@@ -13,19 +13,17 @@ Having an online presence is increasingly important in a digital world. It enabl
 * HTML
 * CSS
 * JavaScript 
-* Flask
-* MySQL 
-* Git
+
 ## Screenshots or Demo:
 Following are screenshots for website prtotype and flowchart.
  * Flowchart: 
-![Screenshot of flowchart.](\src\prototype\Flow_chart.jpg)
+![Screenshot of flowchart.](alx_capstone_project\src\prototype\Flow_chart.jpg)
 * Website prototype:
-![Screenshot of Home page.](\src\prototype\Home_Page.jpg)
-![Screenshot of About me Page.](\src\prototype\About_me.jpg)
-![Screenshot of Skills Page.](\src\prototype\Skills_Page.jpg)
-![Screenshot of Projects Page.](\src\prototype\Projects_Page.jpg)
-![Screenshot of Contact me Page.](\src\prototype\Contact_Page)
+![Screenshot of Home page.](alx_capstone_project\src\prototype\Home_Page.jpg)
+![Screenshot of About me Page.](alx_capstone_project\src\prototype\About_me.jpg)
+![Screenshot of Skills Page.](alx_capstone_project\src\prototype\Skills_Page.jpg)
+![Screenshot of Projects Page.](alx_capstone_project\src\prototype\Projects_Page.jpg)
+![Screenshot of Contact me Page.](alx_capstone_project\src\prototype\Contact_Page)
 ## Contact information:
 * Name: Yosra Elkhalifa
 * Email: yosra.osman93@gmail.com
