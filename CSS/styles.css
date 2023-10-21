@@ -10,7 +10,7 @@ body{
     justify-content: flex-end;
     z-index: 1000;
     position: relative;
-    background-color: rgb(229, 224, 224);
+    background-color: rgb(248, 246, 246);
     opacity: 0.5;
     
 }
@@ -18,23 +18,21 @@ body{
 #nav-links a {
     font-size: 20px;
     text-decoration: none;
-    color: rgb(81, 81, 81);
+    color: rgb(24, 24, 24);
     padding: 10px;
 }
 #nav-links a:hover{
-    color: darkcyan ;
+    color: rgb(4, 182, 182) ;
 }
-/*#nav-links a:visited{
-    color: darkcyan;
-}*/
 
 main {
+    width: 100%;
     height: 600px;
-    background-image: url(/src/main/bg2.jpg);
-    opacity: 0.8;
+    background-image: url(/src/main/bg1.jpeg);
+    /*opacity: 0.8;*/
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background-position: right;
+    background-size: contain;
     position: relative;
     top: -48px;
     display: flex;
@@ -85,18 +83,8 @@ main {
     line-height: 2;
  
 }
-#about-content h1{
+.heading-format{
     font-size: 50px;
-}
-#about-me img{
-    border-radius: 50%;
-}
-
-#skills{
-    background-image: linear-gradient(to bottom, rgba(255,0,0,0), rgb(175, 244, 239));
-    padding-top: 50px;
-}
-#skills h1{
     text-align: center;
     padding: 30px;
     color: black;
@@ -105,10 +93,20 @@ main {
     box-shadow: 10px 10px 8px /*10px*/ #888888;
 
 }
-#hover-cyan:hover{
+#about-me img{
+    border-radius: 50%;
+}
+
+#skills{
+    background-image: linear-gradient(to bottom, rgba(255,0,0,0), rgb(175, 244, 239));
+    
+    padding-top: 50px;
+}
+
+.heading-format:hover{
     text-shadow: 0 0 50px darkcyan;
 }
-#hover-white:hover{
+.hover-white:hover{
     text-shadow: 0 0 50px rgb(0, 5, 6);
 }
 #software-eng{
@@ -128,3 +126,112 @@ main {
 /*.circle-border{
     border-radius: 50%;
 }*/
+#projects{
+    background-image: linear-gradient(to top, rgba(255,0,0,0), rgb(175, 244, 239));
+    padding-top: 50px;
+    
+}
+#projects div{
+    margin-bottom: 50px;
+}
+#projects div img{
+    border-radius: 50px;
+}
+.project-container{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
+#contact{
+    width: 100%;
+    background-image: url(/src/main/bg3.jpg);
+    padding-top: 50px;
+    height: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.8;
+}
+#contact div{
+    padding-left: 100px;
+}
+#contact div p{
+    padding-left: 200px;
+    font-size: 20px;
+}
+form{
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-top: 50px;
+    
+}
+input[type=text]{
+    margin-left: 30px;
+    border: 0;
+    box-shadow: 0 0 30px 8px rgba(63, 62, 62, 0.06);
+    border-radius: 20px;
+    width: 300px;
+    height: 30px;
+    font-family:inherit;
+    font-size: inherit;
+}
+input[type=email]{
+    margin-left: 30px;
+    border: 0;
+    box-shadow: 0 0 30px 8px rgba(63, 62, 62, 0.06);
+    border-radius: 20px;
+    width: 300px;
+    height: 30px;
+    font-family:inherit;
+    font-size: inherit;
+}
+textarea{
+    margin-left: 15px;
+    border: 0;
+    box-shadow: 0 0 30px 8px rgba(63, 62, 62, 0.06);
+    border-radius: 20px;
+    width: 300px;
+    font-family:inherit;
+    font-size: inherit;
+    resize: vertical;
+    vertical-align: middle;
+    height:100px;
+    line-height:100px;
+    
+}
+::placeholder{
+    font-size: medium;
+    text-align: center;
+    position: relative;
+    
+}
+.required::after {
+    content: '  *';
+    color: red;
+  }
+#button-format{
+    margin-left: 10%;
+}
+
+#submit-button{
+    width: 20%;
+    font-family:inherit;
+    font-size: inherit;
+    border-radius: 10px;
+    box-shadow: 10px 10px 8px /*10px*/ #888888;
+    
+}
+footer{
+    padding-top: 50px;
+    background-color: #eaf2f2;
+    
+}
+footer p{
+    text-align: center;
+    font-size: small;
+    margin: 0;
+    padding: 0;
+}
+
