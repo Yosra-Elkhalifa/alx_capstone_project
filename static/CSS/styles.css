@@ -28,7 +28,7 @@ body{
 main {
     width: 100%;
     height: 600px;
-    background-image: url(/src/main/bg1.jpeg);
+    background-image: url(/static/images/main/bg1.jpeg);
     /*opacity: 0.8;*/
     background-repeat: no-repeat;
     background-position: right;
@@ -53,13 +53,16 @@ main {
 #main-content p{
     margin-top: 50px;
     font-size: 20px;
+    padding-right: 600px;
+    text-align: justify;
 }
 
 #social-icons{
     display: flex;
     justify-content: center;
-    padding: 20px;
-    padding-left: 50px;
+    /*padding: 20px;*/
+    /*padding-left: 0px;*/
+    padding-right: 500px;
     gap: 30px;
     
 }
@@ -81,6 +84,9 @@ main {
     padding-top: 50px;
     margin-left: 80px;
     line-height: 2;
+    text-align: justify;
+    text-wrap: wrap;
+    
  
 }
 .heading-format{
@@ -95,6 +101,7 @@ main {
 }
 #about-me img{
     border-radius: 50%;
+    padding-left: 30px;
 }
 
 #skills{
@@ -112,16 +119,23 @@ main {
 #software-eng{
     display: flex;
     text-align: center;
-    gap: 10px;
+}
+#software-eng p {
+    padding-left: 20px;
+    padding-right: 20px;
 }
 #soft-skills{
     display: flex;
     text-align: center;
-    gap: 10px;
+    
     
 }
 #soft-skills img{
    padding-left: 20px;
+}
+#soft-skills p{
+    padding-left: 10px;
+    padding-right: 10px;
 }
 /*.circle-border{
     border-radius: 50%;
@@ -144,7 +158,7 @@ main {
 }
 #contact{
     width: 100%;
-    background-image: url(/src/main/bg3.jpg);
+    background-image: url(/static/images/main/bg3.jpg);
     padding-top: 50px;
     height: auto;
     background-repeat: no-repeat;
@@ -155,7 +169,7 @@ main {
 #contact div{
     padding-left: 100px;
 }
-#contact div p{
+#contact-para{
     padding-left: 200px;
     font-size: 20px;
 }
@@ -223,7 +237,13 @@ textarea{
     box-shadow: 10px 10px 8px /*10px*/ #888888;
     
 }
+#formValidationMsg{
+    color: red;
+    text-align: left;
+}
+
 footer{
+    height: fit-content;
     padding-top: 50px;
     background-color: #eaf2f2;
     
@@ -234,4 +254,146 @@ footer p{
     margin: 0;
     padding: 0;
 }
+@media screen and (max-width: 480px)
+{
+    #nav-links a {
+        font-size: 17px;
+    }
+    main{
+        background-image: none;
+    }
+    #main-content h2{
+        font-size: 20px;
+        
+    }
+    #main-content p{
+        font-size: 10px;
+        padding-right: 300px;
+        
+    }
+    #social-icons{
+        gap: 5px;
+        /*margin-left: 150px;*/
+    }
+    #social-icons img{
+        width: 20px;
+        margin-left: 30px;
+    }
+    #about-me img{
+        width: 200px;
+        height: 200px;
+        margin-top: 200px;
+        padding-left: 10px;
+    }
+    .heading-format{
+        font-size: large;
+    }
+    #about-me p{
+        font-size: small;
+        text-wrap: wrap;
+        line-height: 1;
+        padding-right: 20px;
+        text-align: left;
+    }
+    #about-content{
+        margin-left: 10px;
+    }
 
+    #skills h2{
+        font-size: medium;
+    }
+    #skills p{
+        font-size: smaller;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    #skills img{
+        width: 50px;
+        height: 50px;
+    }
+    #skills iframe{
+        width: 200px;
+        height: 200px;
+    }
+    #software-eng{
+        flex-wrap: wrap;
+    }
+    #soft-skills{
+        flex-wrap: wrap;
+        
+    }
+    #projects div img{
+        width: 150px;
+        height: 150px;
+    }
+    #projects div h2{
+        font-size: medium;
+    }
+    #projects div p{
+        font-size: smaller;
+    }
+    #contact div{
+        padding-left: 10px;
+    }
+    #contact-para{
+        padding-left: 20px;
+        font-size: medium;
+    }
+    #button-format{
+        margin-left: 40%;
+    }
+    
+    #submit-button{
+        width: 40%;
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+
+
+}
+/*media query for tablet screen size*/
+
+@media screen and (max-width:834px ) 
+{
+    main{
+        background-image: none;
+    }
+    #main-content p{
+        font-size: 15px;
+        padding-right: 300px;
+        
+    }  
+    .heading-format{
+        font-size: larger;
+    }
+    #about-me p{
+        font-size: smaller;
+        text-wrap: wrap;
+        line-height: 1;
+        padding-right: 30px;
+    }
+    #skills h2{
+        font-size: large;
+    }
+    #skills p{
+        font-size: small;
+    } 
+    #software-eng{
+        flex-wrap: wrap;
+    }
+    #soft-skills{
+        flex-wrap: wrap;
+        
+    }
+    #projects div img{
+        padding-left: 10px;
+    }
+    #projects div h2{
+        font-size: large;
+    }
+    #projects div p{
+        font-size: small;
+    }
+
+}
